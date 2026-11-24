@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>Label</key><string>com.shark.zhixing-web</string>
+<key>ProgramArguments</key><array><string>/Users/shark/.nvm/versions/node/v22.22.3/bin/node</string><string>/Users/shark/work/GP/server.mjs</string></array>
+<key>WorkingDirectory</key><string>/Users/shark/work/GP</string>
+<key>RunAtLoad</key><true/>
+<key>KeepAlive</key><true/>
+<key>ThrottleInterval</key><integer>10</integer>
+<key>ProcessType</key><string>Background</string>
+<key>StandardOutPath</key><string>/Users/shark/work/gp/data/service-logs/SharkZhixing.log</string>
+<key>StandardErrorPath</key><string>/Users/shark/work/gp/data/service-logs/SharkZhixing.log</string>
+</dict></plist>

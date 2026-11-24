@@ -1,0 +1,156 @@
+{
+  "generated_at": "2026-11-20 00:48:17",
+  "cutoff": "2026-11-19",
+  "derived_cutoff": "2026-11-19",
+  "tables": {
+    "etfs": {
+      "rows": 1879,
+      "columns": [
+        "code",
+        "name",
+        "fund_type",
+        "list_date",
+        "track_index",
+        "updated_at"
+      ],
+      "file": "etfs.csv.gz"
+    },
+    "trade_calendar": {
+      "rows": 8797,
+      "columns": [
+        "date"
+      ],
+      "file": "trade_calendar.csv.gz"
+    },
+    "etf_daily": {
+      "rows": 1544685,
+      "columns": [
+        "date",
+        "code",
+        "open",
+        "close",
+        "high",
+        "low",
+        "volume"
+      ],
+      "file": "etf_daily.csv.gz"
+    },
+    "etf_shares": {
+      "rows": 1513204,
+      "columns": [
+        "date",
+        "code",
+        "shares_yi"
+      ],
+      "file": "etf_shares.csv.gz"
+    },
+    "etf_share_scale": {
+      "rows": 4103,
+      "columns": [
+        "code",
+        "date",
+        "ratio",
+        "method",
+        "detected_at"
+      ],
+      "file": "etf_share_scale.csv.gz"
+    },
+    "indices": {
+      "rows": 11,
+      "columns": [
+        "code",
+        "name",
+        "updated_at"
+      ],
+      "file": "indices.csv.gz"
+    },
+    "index_daily": {
+      "rows": 54651,
+      "columns": [
+        "date",
+        "code",
+        "open",
+        "close",
+        "high",
+        "low",
+        "volume",
+        "amount_yi",
+        "cons_number",
+        "pe"
+      ],
+      "file": "index_daily.csv.gz"
+    },
+    "fitted_core_summary": {
+      "rows": 578,
+      "columns": [
+        "signal_date",
+        "next_rebalance",
+        "generated_at",
+        "rule_version",
+        "scored",
+        "min_aum_yi",
+        "complete"
+      ],
+      "file": "fitted_core_summary.csv.gz"
+    },
+    "fitted_core_pick": {
+      "rows": 11873,
+      "columns": [
+        "signal_date",
+        "code",
+        "name",
+        "core_rank",
+        "core_score",
+        "held",
+        "action",
+        "factors_json",
+        "pre_rank"
+      ],
+      "file": "fitted_core_pick.csv.gz"
+    },
+    "fitted_daily_summary": {
+      "rows": 2886,
+      "columns": [
+        "signal_date",
+        "next_signal",
+        "generated_at",
+        "rule_version",
+        "codes_with_bar",
+        "codes_with_enough_history",
+        "scored",
+        "min_aum_yi",
+        "shares_available",
+        "universe_mean",
+        "universe_median",
+        "universe_hit",
+        "baseline_mean",
+        "baseline_median",
+        "baseline_hit",
+        "core_mean",
+        "core_median",
+        "core_hit",
+        "rank_ic",
+        "eval_json",
+        "index_returns_json"
+      ],
+      "file": "fitted_daily_summary.csv.gz"
+    },
+    "fitted_daily_pick": {
+      "rows": 43215,
+      "columns": [
+        "signal_date",
+        "bucket",
+        "pick_rank",
+        "code",
+        "name",
+        "theme",
+        "fund_type",
+        "baseline_score",
+        "reason_text",
+        "reason_json",
+        "next_return"
+      ],
+      "file": "fitted_daily_pick.csv.gz"
+    }
+  }
+}

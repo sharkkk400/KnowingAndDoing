@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>DAILYSCOPE_HOME</key>
+		<string>/Users/shark/work/gp/Pentad/.localdata</string>
+	</dict>
+	<key>KeepAlive</key>
+	<true/>
+	<key>Label</key>
+	<string>com.shark.pentad-reference</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/Users/shark/work/gp/Pentad/.venv/bin/python</string>
+		<string>-m</string>
+		<string>uvicorn</string>
+		<string>local_reference:app</string>
+		<string>--host</string>
+		<string>127.0.0.1</string>
+		<string>--port</string>
+		<string>8003</string>
+		<string>--lifespan</string>
+		<string>off</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StandardErrorPath</key>
+	<string>/Users/shark/work/gp/data/service-logs/SharkPentad.log</string>
+	<key>StandardOutPath</key>
+	<string>/Users/shark/work/gp/data/service-logs/SharkPentad.log</string>
+	<key>ThrottleInterval</key>
+	<integer>15</integer>
+	<key>WorkingDirectory</key>
+	<string>/Users/shark/work/gp/Pentad/backend</string>
+</dict>
+</plist>

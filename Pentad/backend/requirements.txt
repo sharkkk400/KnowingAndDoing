@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+apscheduler
+requests
+akshare
+pytest
+ruff
+mypy

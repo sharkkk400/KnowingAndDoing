@@ -1,0 +1,11 @@
+.venv
+__pycache__/
+*.pyc
+*.db
+*.db-wal
+*.db-shm
+nohup.out
+.idea/
+node_modules
+dist
+.DS_Store

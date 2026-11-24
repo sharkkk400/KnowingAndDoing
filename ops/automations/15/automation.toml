@@ -1,0 +1,11 @@
+version = 1
+id = "15"
+kind = "heartbeat"
+name = "沙克知行录 · 15万元模拟账户"
+prompt = "北京时间交易日08:10和16:10维护独立模拟账户 /Users/shark/work/GP/data/paper-150k，2026-11-23收盘空仓15万元。先核对交易日，休市跳过。08:10检查前一日已结算，运行GP的 node scripts/paper-150k-morning.mjs 冻结本账户计划并核验日期。16:10用冻结计划与真实分钟行情，按GP现行盘中突破确认和下一分钟成交规则回放，开盘单用真实开盘价。按成交顺序、整手、可用现金与可卖份额、最多3只、每只每天最多2次、3万元门槛、买卖各万三执行。只操作模拟账户，不接券商，不修改用户实际账户。保存每笔成交（用确定性ID去重）、手续费、持仓、现金、收盘净值及修订记录。更新独立account.json、每日记录.csv和符合晨报格式的position-log.json，登记首次成交价、风险位、weakDefense或bounce及初始份额和建仓日期。没交易也记账。每次检查遗漏并修复，缺少冻结计划或行情时标记待核实，不倒推编造成交。每天收盘给用户交易代码、金额、持仓、日盈亏、累计收益及与沪深300对比。"
+model_prompt_sha256 = "8e4e4407ea6f7ba9ed9637b760b3746a07b66f6cbe99972f3d7ff64c9093a353"
+status = "ACTIVE"
+rrule = "FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;BYHOUR=8,16;BYMINUTE=10"
+target_thread_id = "01a1ee02-ba8b-7ab3-9d9d-34d9615c006c"
+created_at = 1795424962431
+updated_at = 1795424962431

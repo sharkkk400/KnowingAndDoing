@@ -1,0 +1,9 @@
+target-version = "py39"
+line-length = 120
+
+[lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM", "DTZ", "BLE"]
+ignore = ["DTZ005", "DTZ007", "BLE001"]
+
+[lint.isort]
+known-first-party = ["data", "domains", "ops"]
